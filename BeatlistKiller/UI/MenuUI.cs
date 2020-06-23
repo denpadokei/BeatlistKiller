@@ -13,7 +13,7 @@ namespace BeatlistKiller.UI
     {
         public static void CreateUI()
         {
-            var button = new MenuButton("BeatlistListKiller", ProcessKiller.KillProcesses);
+            var button = new MenuButton("Beatlist Killer", ProcessKiller.KillProcesses);
             MenuButtons.instance.RegisterButton(button);
         }
     }

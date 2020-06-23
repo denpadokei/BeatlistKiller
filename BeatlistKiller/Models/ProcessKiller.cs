@@ -12,11 +12,9 @@ namespace BeatlistKiller.Models
     {
         public static void KillProcesses()
         {
-            foreach (var p in Process.GetProcessesByName("beatlist")) {
+            foreach (var p in Process.GetProcessesByName("beatlist").Where(x => x.MainWindowHandle == IntPtr.Zero)) {
                 try {
-                    if (p.MainWindowHandle == IntPtr.Zero) {
-                        p.Kill();
-                    }
+                    p.Kill();
                 }
                 catch (Exception e) {
                     Logger.log.Error(e);

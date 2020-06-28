@@ -1,0 +1,10 @@
+﻿<bg xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='https://monkeymanboy.github.io/BSML-Docs/ https://raw.githubusercontent.com/monkeymanboy/BSML-Docs/gh-pages/BSMLSchema.xsd'>
+  <settings-container pad-bottom='12' pad-top='2' spacing='1'>
+    <bool-setting text='Auto Kill' value='auto-kill'></bool-setting>
+    <slider-setting text='Time Span' value='time-span' min='1' max='60' increment='1'></slider-setting>
+  </settings-container>
+  <!--<bottom-button-panel>
+    <button text='RUN' on-click='run'></button>
+    <button text='SAVE' on-click='save'></button>
+  </bottom-button-panel>-->
+</bg>

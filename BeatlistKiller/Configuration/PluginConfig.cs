@@ -1,38 +1,37 @@
-﻿/*
-using System.Runtime.CompilerServices;
-using IPA.Config.Stores;
+﻿//using System.Collections.Generic;
+//using System.ComponentModel;
+//using System.IO;
+//using System.Runtime.CompilerServices;
+//using BeatlistKiller.UI.Views;
+//using BeatSaberMarkupLanguage.Attributes;
+//using IPA.Config.Stores;
+//using static IPA.Config.Config;
 
-[assembly: InternalsVisibleTo(GeneratedStore.AssemblyVisibilityTarget)]
-namespace BeatlistKiller.Configuration
-{
-    internal class PluginConfig
-    {
-        public static PluginConfig Instance { get; set; }
-        public virtual int IntValue { get; set; } = 42; // Must be 'virtual' if you want BSIPA to detect a value change and save the config automatically.
+//namespace BeatlistKiller.Configuration
+//{
+//    internal class PluginConfig
+//    {
+//        public static string FilePath => Path.Combine(Directory.GetCurrentDirectory(), "UserData", "Beatlistkiller.ini");
 
-        /// <summary>
-        /// This is called whenever BSIPA reads the config from disk (including when file changes are detected).
-        /// </summary>
-        public virtual void OnReload()
-        {
-            // Do stuff after config is read from disk.
-        }
+//        public static PluginConfig Instance { get; } = new PluginConfig();
 
-        /// <summary>
-        /// Call this to force BSIPA to update the config file. This is also called by BSIPA if it detects the file was modified.
-        /// </summary>
-        public virtual void Changed()
-        {
-            // Do stuff when the config is changed.
-        }
+//        private PluginConfig()
+//        {
+//            this.Load();
+//            this.Save();
+//        }
 
-        /// <summary>
-        /// Call this to have BSIPA copy the values from <paramref name="other"/> into this config.
-        /// </summary>
-        public virtual void CopyFrom(PluginConfig other)
-        {
-            // This instance's members populated from other
-        }
-    }
-}
-*/
+//        public bool AutoKill = false;
+//        public float TimeSpan  = 1; // Must be 'virtual' if you want BSIPA to detect a value change and save the config automatically.
+
+//        public void Save()
+//        {
+//            ConfigSerializer.SaveConfig(this, FilePath);
+//        }
+
+//        public void Load()
+//        {
+//            ConfigSerializer.LoadConfig(this, FilePath);
+//        }
+//    }
+//}
